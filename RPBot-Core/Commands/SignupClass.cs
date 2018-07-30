@@ -91,7 +91,7 @@ namespace RPBot
                 Timestamp = DateTime.UtcNow,
                 Title = "Event: " + id
             }
-            .WithFooter("Heroes & Villains");
+            .WithFooter("Prometheus RP");
 
             bool even = false;
             var users = await e.Guild.GetAllMembersAsync();

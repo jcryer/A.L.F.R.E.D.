@@ -39,8 +39,8 @@ namespace RPBot
                 await e.RespondAsync("Fail. No data yet in system.");
                 return;
             }
-            string response = BuildGraph(user.Stats.GetList(), user.GetRank().First(), user.UserData.Username);
-            await e.RespondWithFileAsync(response, $"Your current rank: {user.GetRank()}");
+            string response = BuildGraph(user.Stats.GetList(), d.DisplayName);
+            await e.RespondWithFileAsync(response);
             File.Delete(response);
         }
 
@@ -79,12 +79,12 @@ namespace RPBot
             await e.RespondAsync(embed: b.Build());
         }
 
-        public static string BuildGraph(int[] stats, char rank, string name)
+        public static string BuildGraph(int[] stats, string name)
         {
             using (Image<Rgba32> img = Image.Load("Data/template.png"))
             {
                 IPath userGraph = BuildPath(stats);
-                var DRanks = RPClass.Users.Where(x => x.GetRank().Contains(rank)).Where(x => x.Stats.Melee != 0).Select(x => x.Stats.GetList());
+                var DRanks = RPClass.Users.Where(x => x.Stats.Melee != 0).Select(x => x.Stats.GetList());
 
                 int[] total = new int[9];
                 int[] data = new int[9];

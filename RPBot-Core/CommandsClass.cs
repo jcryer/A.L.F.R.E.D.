@@ -60,20 +60,6 @@ namespace RPBot
             await e.RespondAsync("Hmm. I choose... " + Choices[randomChoice]);
         }
 
-        [Command("listinactive"), Description("Test."), IsMuted]
-        public async Task LI(CommandContext e)
-        {
-            string list = "```";
-            foreach (var x in await e.Guild.GetAllMembersAsync())
-            {
-                if (x.Roles.Count() == 0)
-                {
-                    list += $"\n{x.Username} - {x.JoinedAt.ToString()}";
-                }
-            }
-            await e.RespondAsync(list + "\n```");
-        }
-
         [Group("slowmode"), Description("Slowmode commands"), IsMuted]
         class Slowmode : BaseCommandModule
         {
@@ -92,74 +78,13 @@ namespace RPBot
             }
         }
 
-        [Command("hackban"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
+        [Command("hackban"), Description("Admin hackban command."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task HackBan(CommandContext e,[Description("User ID")] ulong userId)
         {
 
             await e.Guild.BanMemberAsync(userId, 7, "");
 
             await e.RespondAsync($"Hackbanned ID: {userId}");
-        }
-
-        [Command("name"), Description("Command for users to change their RP name temporarily"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
-        public async Task Name(CommandContext e, [Description("What to call yourself")] string name = "")
-        {
-            DiscordMessage x;
-            if (name == "off")
-            {
-                SpeechObject.RootObject savedName = RPClass.SpeechList.FirstOrDefault(y => y.Id == e.Member.Id);
-                if (savedName != null)
-                {
-                    RPClass.SpeechList.Remove(savedName);
-                    x = await e.RespondAsync("Removed from list.");
-                }
-                else
-                {
-                    x = await e.RespondAsync("");
-                }
-                await Task.Delay(2000);
-                await e.Message.DeleteAsync();
-                await x.DeleteAsync();
-
-            }
-            else if (name != "")
-            {
-                SpeechObject.RootObject savedName = RPClass.SpeechList.FirstOrDefault(y => y.Id == e.Member.Id);
-                if (savedName != null)
-                {
-                    RPClass.SpeechList.Remove(savedName);
-                }
-                RPClass.SpeechList.Add(new SpeechObject.RootObject(e.Member.Id, name));
-                x = await e.RespondAsync("Name changed.");
-                await Task.Delay(2000);
-                await e.Message.DeleteAsync();
-                await x.DeleteAsync();
-            }
-            else
-            {
-                x = await e.RespondAsync("Specify a name.");
-                await Task.Delay(2000);
-                await e.Message.DeleteAsync();
-                await x.DeleteAsync();
-            }
-        }
-        [Command("json"), Description("Admin json file command"), IsMuted]
-        public async Task Json(CommandContext e)
-        {
-            RPClass.SaveData(1);
-            await e.RespondWithFileAsync("UserData.txt", "Json file of all user data!\nRoles: 1 = Hero, 2 = Villain, 3 = Rogue\nStatus: 1 = Alive, 2 = Dead");
-        }
-
-        [Command("sudo"), Description("Execute a command as if you're another user"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
-        public async Task SudoAsync(CommandContext e, [Description("User to Sudo")]DiscordUser user, [RemainingText, Description("Command to execute")] string command = "help")
-        {
-            await e.CommandsNext.SudoAsync(user, e.Channel, command);
-        }
-
-        [Command("colour"), Description("REEEEE")]
-        public async Task ColourAsync(CommandContext e, DiscordRole role, [RemainingText, Description("Hex Code")] string colour)
-        {
-            await role.UpdateAsync(color: new DiscordColor(colour));
         }
 
         [Command("serverinfo"), Description("Gets info about current server"), IsMuted]
@@ -247,7 +172,7 @@ namespace RPBot
                 {
                     paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await RPClass.LogChannel.SendFileAsync(new MemoryStream(System.Text.Encoding.ASCII.GetBytes(paste)), $"log-{ctx.Channel.Name}-{DateTime.Now.ToString("MM_dd_yyyy-HH_mm")}.txt");
             }
 
             [Command("from"), Description("Delete an amount of messages from a specified message"), Aliases("f", "fr")]
@@ -269,7 +194,7 @@ namespace RPBot
                 {
                     paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await RPClass.LogChannel.SendFileAsync(new MemoryStream(System.Text.Encoding.ASCII.GetBytes(paste)), $"log-{ctx.Channel.Name}-{DateTime.Now.ToString("MM_dd_yyyy-HH_mm")}.txt");
             }
 
             [Command("fromto"), Description("Delete all messages between two specified messages")]
@@ -321,7 +246,7 @@ namespace RPBot
                 {
                     paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await RPClass.LogChannel.SendFileAsync(new MemoryStream(System.Text.Encoding.ASCII.GetBytes(paste)), $"log-{ctx.Channel.Name}-{DateTime.Now.ToString("MM_dd_yyyy-HH_mm")}.txt");
             }
 
             [Command("user"), Description("Delete an amount of messages by an user."), Aliases("u", "pu")]
@@ -355,7 +280,7 @@ namespace RPBot
                 {
                     paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await RPClass.LogChannel.SendFileAsync(new MemoryStream(System.Text.Encoding.ASCII.GetBytes(paste)), $"log-{ctx.Channel.Name}-{DateTime.Now.ToString("MM_dd_yyyy-HH_mm")}.txt");
             }
 
             [Command("commands"), Description("Purge RPBot's messages."), Aliases("c", "self", "own", "clean")]
@@ -375,7 +300,7 @@ namespace RPBot
                 {
                     paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await RPClass.LogChannel.SendFileAsync(new MemoryStream(System.Text.Encoding.ASCII.GetBytes(paste)), $"log-{ctx.Channel.Name}-{DateTime.Now.ToString("MM_dd_yyyy-HH_mm")}.txt");
             }
 
             [Command("bots"), Description("Purge messages from all bots in this channel"), Aliases("b", "bot")]
@@ -395,7 +320,7 @@ namespace RPBot
                 {
                     paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await RPClass.LogChannel.SendFileAsync(new MemoryStream(System.Text.Encoding.ASCII.GetBytes(paste)), $"log-{ctx.Channel.Name}-{DateTime.Now.ToString("MM_dd_yyyy-HH_mm")}.txt");
             }
 
             [Command("images"), Description("Purge messages with images or attachments on them."), Aliases("i", "imgs", "img")]
@@ -415,7 +340,7 @@ namespace RPBot
                 {
                     paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await RPClass.LogChannel.SendFileAsync(new MemoryStream(System.Text.Encoding.ASCII.GetBytes(paste)), $"log-{ctx.Channel.Name}-{DateTime.Now.ToString("MM_dd_yyyy-HH_mm")}.txt");
             }
         }
 
@@ -578,28 +503,7 @@ namespace RPBot
             await e.Channel.DeleteMessagesAsync(messageList);
 
         }
-
-        [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
-        public async Task RemoveUser(CommandContext e, [RemainingText] string whotodelete = "")
-        {
-            if (RPClass.Users.Any(x => x.UserData.Username == whotodelete))
-            {
-                UserObject.RootObject user = RPClass.Users.First(x => x.UserData.Username == whotodelete);
-
-                if (RPClass.Guilds.Any(x => x.Id == user.UserData.GuildID))
-                {
-                    RPClass.Guilds.First(x => x.Id == user.UserData.GuildID).UserIDs.Remove(user.UserData.UserID);
-                }
-                RPClass.Users.Remove(user);
-                RPClass.SaveData(-1);
-                await e.RespondAsync("User removed.");
-            }
-            else
-            {
-                await e.RespondAsync("No user with that name found.");
-            }
-        }
-
+        
         [Command("giverole"), RequireOwner]
         public async Task GiveRole(CommandContext e, DiscordMember member, DiscordRole role)
         {
@@ -668,7 +572,7 @@ namespace RPBot
                     Color = new DiscordColor("4169E1"),
                     Timestamp = DateTime.UtcNow
                 }
-                .WithFooter("Heroes & Villains");
+                .WithFooter("Prometheus RP");
                 bool even = false;
                 foreach (DiscordGuild g in e.Client.Guilds.Values)
                 {

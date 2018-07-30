@@ -17,6 +17,7 @@ namespace RPBot
     public class Program
     {
 
+        
         public static string token;
         public static Random random = new Random();
 
@@ -24,6 +25,7 @@ namespace RPBot
 
         private async Task Run(string[] args)
         {
+           // File.WriteAllText("test.txt", WikiTests.CreateInfoBox(new InfoBoxObject("jeff", "the slayer", "no<br>maybe<br>perhaps", "gay", "Single", 25, "23/02/2000", "North Pier", "South Pier", "Human", "Male", "182cm", "70kg", "Bright Blue", "Hot pink", new string[] { "Image 1", "Image 2", "Image 3" }, new string[] { "https://cdn.discordapp.com/attachments/447483115250909184/473256482616508436/image.jpg", "https://cdn.discordapp.com/attachments/447483115250909184/473257220813881344/image.jpg", "https://cdn.discordapp.com/attachments/455019174385942530/472809787780759562/a7a1c3d8cffc5dff31021d5cfd3a135f.png" })));
            if (args.Any())
             {
                 RPClass.Restarted = true;

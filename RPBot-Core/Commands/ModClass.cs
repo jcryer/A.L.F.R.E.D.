@@ -17,19 +17,13 @@ namespace RPBot
             try
             {
                 UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
-
-                if (userObject.ModData.IsMuted == 3)
-                {
-                    if (!silent)
-                        await e.RespondAsync("Fail: user is RP Locked.");
-                    return;
-                }
-                else if (userObject.ModData.IsMuted == 2)
+                
+                if (userObject.ModData.IsMuted == 1)
                 {
                     userObject.ModData.IsMuted = 0;
                     await user.ReplaceRolesAsync(userObject.ModData.Roles);
                     if (!silent)
-                        await e.RespondAsync("User un-ultimuted.");
+                        await e.RespondAsync("User unmuted.");
 
                 }
                 else
@@ -40,11 +34,11 @@ namespace RPBot
                             await e.RespondAsync("Admins are the master race, leave us alone.");
                         return;
                     }
-                    userObject.ModData.IsMuted = 2;
+                    userObject.ModData.IsMuted = 1;
                     userObject.ModData.Roles = user.Roles.ToList();
                     await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.PunishedRole });
                     if (!silent)
-                        await e.RespondAsync("User ultimuted.");
+                        await e.RespondAsync("User muted.");
                 }
                 RPClass.SaveData(1);
 
@@ -57,7 +51,7 @@ namespace RPBot
         }
 
 
-        [Command("ultibulk"), Aliases ("allmute", "am", "ub", "ultib", "allm"), Description("Staff command to give multiple people XP (Better for bot)."), RequireRoles(RoleCheckMode.Any, "Administrator")]
+        [Command("ultibulk"), Aliases ("allmute", "am", "ub", "ultib", "allm"), Description("Staff command to mute multiple people."), RequireRoles(RoleCheckMode.Any, "Administrator")]
         public async Task Bulk(CommandContext e)
         {
 
@@ -92,46 +86,6 @@ namespace RPBot
             else
             {
                 await e.RespondAsync("Ultibulk complete.");
-            }
-        }
-
-        [Command("rplock"), Description("Command for admins to hide all channels from a user and remove their roles"), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
-        public async Task RPLock(CommandContext e, [Description("Member to be muted")] DiscordMember user)
-        {
-            var interactivity = e.Client.GetInteractivity();
-            try
-            {
-                UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
-
-                if (userObject.ModData.IsMuted == 3)
-                {
-                    userObject.ModData.IsMuted = 0;
-                    await user.ReplaceRolesAsync(userObject.ModData.Roles);
-                    await e.RespondAsync("User un rp-locked.");
-                }
-                else if (userObject.ModData.IsMuted == 2)
-                {
-                    await e.RespondAsync("Fail: user is ultimuted.");
-                    return;
-                }
-                else if (userObject.ModData.IsMuted == 1)
-                {
-                    await e.RespondAsync("Fail: user is muted.");
-                    return;
-                }
-                else
-                {
-                    userObject.ModData.IsMuted = 3;
-                    userObject.ModData.Roles = user.Roles.ToList();
-                    await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.RPLockRole });
-                    await e.RespondAsync("User rplocked.");
-                }
-                RPClass.SaveData(1);
-
-            }
-            catch
-            {
-                await e.RespondAsync("NO");
             }
         }
     }

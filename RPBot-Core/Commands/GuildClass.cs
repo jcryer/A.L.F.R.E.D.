@@ -16,8 +16,7 @@ namespace RPBot
         [Command("create"), Description("Command for admins to create a guild."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Create(CommandContext e, [RemainingText, Description("Name of new Guild")] string guildName)
         {
-            RPClass.Guilds.Add(new GuildObject.RootObject(1 + RPClass.Guilds.Count, guildName, new List<ulong>()));
-            await XPClass.UpdateGuildRanking(e.Guild);
+            RPClass.Guilds.Add(new GuildObject.RootObject(1 + RPClass.Guilds.Count, guildName));
             RPClass.SaveData(3);
             await e.RespondAsync("Guild created.");
         }
@@ -27,18 +26,12 @@ namespace RPBot
         {
             try
             {
-                foreach (UserObject.RootObject user in RPClass.Users.FindAll(x => x.UserData.GuildID == RPClass.Guilds.First(y => y.Name == guildName).Id))
+                foreach (UserObject.RootObject user in RPClass.Users.FindAll(x => x.UserData.GuildIDs.Contains(RPClass.Guilds.First(y => y.Name == guildName).Id)))
                 {
-                    user.UserData.GuildID = 0;
+                    user.UserData.GuildIDs.Remove(RPClass.Guilds.First(y => y.Name == guildName).Id);
                 }
                 RPClass.Guilds.Remove(RPClass.Guilds.First(x => x.Name == guildName));
-                await XPClass.UpdatePlayerRanking(e.Guild, 1);
-                await XPClass.UpdatePlayerRanking(e.Guild, 2);
-                await XPClass.UpdatePlayerRanking(e.Guild, 3);
-                await XPClass.UpdatePlayerRanking(e.Guild, 4);
-
-                await XPClass.UpdateGuildRanking(e.Guild);
-
+               
                 RPClass.SaveData(3);
                 RPClass.SaveData(1);
 
@@ -55,14 +48,15 @@ namespace RPBot
         {
             try
             {
-                RPClass.Guilds.First(x => x.Name == guildName).UserIDs.Add(RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.UserID);
-                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.GuildID = RPClass.Guilds.First(x => x.Name == guildName).Id;
-                if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
-                else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
-                else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 3) await XPClass.UpdatePlayerRanking(e.Guild, 3);
-                else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 4) await XPClass.UpdatePlayerRanking(e.Guild, 4);
+                var guild = RPClass.Guilds.First(x => x.Name == guildName);
+                var rpUser = RPClass.Users.First(x => x.UserData.UserID == user.Id);
+                if (rpUser.UserData.GuildIDs.Contains(guild.Id)) {
+                    await e.RespondAsync("User already in guild.");
+                    return;
+                }
 
-                await XPClass.UpdateGuildRanking(e.Guild);
+                rpUser.UserData.GuildIDs.Add(guild.Id);
+
                 RPClass.SaveData(3);
                 RPClass.SaveData(1);
 
@@ -79,15 +73,17 @@ namespace RPBot
         {
             try
             {
-                RPClass.Guilds.First(x => x.Name == guildName).UserIDs.Remove(RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.UserID);
-                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.GuildID = 0;
-                if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
-                else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
-                else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 3) await XPClass.UpdatePlayerRanking(e.Guild, 3);
-                else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 4) await XPClass.UpdatePlayerRanking(e.Guild, 4);
 
-                await XPClass.UpdateGuildRanking(e.Guild);
+                var guild = RPClass.Guilds.First(x => x.Name == guildName);
+                var rpUser = RPClass.Users.First(x => x.UserData.UserID == user.Id);
+                if (!rpUser.UserData.GuildIDs.Contains(guild.Id))
+                {
+                    await e.RespondAsync("User not in guild.");
+                    return;
+                }
 
+                rpUser.UserData.GuildIDs.Remove(guild.Id);
+                
                 RPClass.SaveData(3);
                 RPClass.SaveData(1);
                 await e.RespondAsync("User removed from guild.");

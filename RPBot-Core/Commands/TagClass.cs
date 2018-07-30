@@ -38,7 +38,7 @@ namespace RPBot
                 return;
             }
 
-            RPClass.TagsList.Add(new TagObject.RootObject(tagName.ToLower(), text));
+            RPClass.TagsList.Add(new TagObject.RootObject(tagName.ToLower(), text, e.Member.Id));
             await e.RespondAsync("Tag: " + tagName + " added.");
             RPClass.SaveData(9);
         }
@@ -56,7 +56,7 @@ namespace RPBot
                 Color = new DiscordColor("4169E1"),
                 Timestamp = DateTime.UtcNow
             }
-            .WithFooter("Heroes & Villains");
+            .WithFooter("Prometheus RP");
             bool even = false;
             foreach (TagObject.RootObject t in RPClass.TagsList)
             {                

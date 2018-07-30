@@ -11,40 +11,38 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-   // DEPRECATED - COMMENTED OUT IN RPBOT.CS
     [Group("instance"), Description("Instance commands"), IsMuted]
     class InstanceClass : BaseCommandModule
     {
-        [Command("add"), Description("Command to create a new location instance."), RequireRoles(RoleCheckMode.Any, "Staff")]
-        public async Task Add(CommandContext e, [Description("Give the ID of the channel you wish to create from the !instance channels command.")]int channelID)
+        [Command("create"), Description("Command to create a new location instance.")]
+        public async Task Create(CommandContext e, [Description("Give the ID of the channel you wish to create from the !instance channels command.")]int channelID)
         {
             InstanceObject.ChannelTemplate template = RPClass.ChannelTemplates.FirstOrDefault(x => x.Id == channelID);
             if (template != null)
             {
-                int instanceID = 1;
-                if (RPClass.InstanceList.Count > 0)
-                {
-                    instanceID = RPClass.InstanceList.Last().Id + 1;
-                }
-
-                DiscordChannel c = await e.Guild.CreateChannelAsync(instanceID + "-" + template.Name, ChannelType.Text, parent: RPClass.InstanceCategory);
-                RPClass.InstanceList.Add(new InstanceObject.RootObject(instanceID, c.Id, template.Id));
+                DiscordChannel c = await e.Guild.CreateChannelAsync(template.Name, ChannelType.Text, parent: RPClass.InstanceCategory);
                 if (template.Content.Count > 0)
                 {
                     foreach (string content in template.Content)
                     {
-                        await c.SendMessageAsync(content);
+                        if (content.StartsWith("File:"))
+                        {
+                            await c.SendFileAsync(content.Split(':')[1]);
+                        }
+                        else
+                        {
+                            await c.SendMessageAsync(content);
+                        }
                     }
                 }
-                RPClass.SaveData(7);
-                await e.RespondAsync("Channel: " + template.Name + " created with ID: " + instanceID + ".");
+                await e.RespondAsync($"Channel: {template.Name} created - {c.Mention}");
             }
             else
             {
                 await e.RespondAsync("Enter a valid channel ID.");
             }
         }
-
+        /*
         [Command("end"), Description("Command to end a roleplay."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task End(CommandContext e, [Description("Quote the ID at the beginning of the channel name.")]int rpID)
         {
@@ -81,10 +79,10 @@ namespace RPBot
             {
                 await e.RespondAsync("Use the ID at the beginning of the channel name.");
             }
-        }
+        }*/
 
 
-        [Command("addtemplate"), Description("Admin command to add a channel template to the list."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("addtemplate"), Description("Staff command to add a channel template to the list."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task AddTemplate(CommandContext e, [Description("Name of channel for template.")]string name, [Description("All text to be displayed at the start of the instance. Send in multiple messages, as the character limit is 2000. If there is more than one message, end the message with '¬' and start the next message with '¬'."), RemainingText] string content)
         {
             List<string> ContentList = new List<string>
@@ -128,7 +126,7 @@ namespace RPBot
                 await e.RespondAsync("Template added and saved.");
             }
         }
-        [Command("channels"), Description("Command to list all channel templates and their IDs."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("channels"), Description("Command to list all channel templates and their IDs.")]
         public async Task ListChannels(CommandContext e)
         {
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder
@@ -136,7 +134,7 @@ namespace RPBot
                 Color = new DiscordColor("4169E1"),
                 Timestamp = DateTime.UtcNow
             }
-            .WithFooter("Heroes & Villains");
+            .WithFooter("Prometheus RP");
             foreach (InstanceObject.ChannelTemplate c in RPClass.ChannelTemplates)
             {
                 if (embed.Fields.Count > 24)

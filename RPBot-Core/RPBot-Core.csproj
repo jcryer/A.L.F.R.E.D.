@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <Folder Include="Dependencies\" />
+    <Folder Include="logs\" />
   </ItemGroup>
 
 </Project>
