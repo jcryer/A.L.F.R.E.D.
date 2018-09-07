@@ -4,268 +4,144 @@
     "Name": "Control Tower",
     "Content": [
       "https://cdn.discordapp.com/attachments/472498975241666591/473110359788617728/control_room.jpg",
-      "*The Control Tower is the tallest tower in the Cityship by far, and sits in the exact centre of the city. Every aspect of the city is controlled from this tower, and the vast majority of the three hundred crewmen work here to sustain the ship and all of its systems. The control room sits at the very top of the Control Tower, watching over the city as the forcefield stretches overhead. Security in the tower is tight, and automated security systems are in effect throughout the building. There is an unmanned (though defended by automated security) secondary control room by Shield Generator Alpha, at the end of the North Pier.*
-
-*Every ship has a captain and a deputy, and the Prometheus is no exception. Captain Nathaniel Blake has been in charge of the Prometheus for fourteen years, during which time there has not been a single major incident. He is respected throughout the ship, and takes his job very seriously.*
-https://cdn.discordapp.com/attachments/472498975241666591/473110706187796480/captain.jpg",
-"*His understudy and First Officer Elaine Avarra is respected throughout the cosmos as one of the greatest negotiators in the galaxy. And she has the experience to support that claim after talking down the Seventh fleet of Ak’tek, preventing an angry mob from taking control of the cityship on three separate occasions and convincing the ruler previously incredibly hostile alien race to lay down his weapon and learn to play the guitar.*
-https://cdn.discordapp.com/attachments/472498975241666591/473110770381750283/first_officer.jpg",
-
-"*The tower is the strongest building in the city, and is one of few with its own backup systems - emergency life support, waste reclaim, oxygen recycling. Built directly on top of the primary engine, it could technically serve as an independent ship if needed. In the event of a catastrophic failure in a critical system, all passengers are instructed to make their way to the most heavily shielded buildings in the city, these being the control tower, the hospital, the three shield generator stations and the council building.*
-https://cdn.discordapp.com/attachments/472498975241666591/473110831727509504/atlantis_2.jpg"
+      "*The Control Tower is the tallest tower in the Cityship by far, and sits in the exact centre of the city. Every aspect of the city is controlled from this tower, and the vast majority of the three hundred crewmen work here to sustain the ship and all of its systems. The control room sits at the very top of the Control Tower, watching over the city as the forcefield stretches overhead. Security in the tower is tight, and automated security systems are in effect throughout the building. There is an unmanned (though defended by automated security) secondary control room by Shield Generator Alpha, at the end of the North Pier.*\r\n\r\n*Every ship has a captain and a deputy, and the Prometheus is no exception. Captain Nathaniel Blake has been in charge of the Prometheus for fourteen years, during which time there has not been a single major incident. He is respected throughout the ship, and takes his job very seriously.*\r\nhttps://cdn.discordapp.com/attachments/472498975241666591/473110706187796480/captain.jpg",
+      "*His understudy and First Officer Elaine Avarra is respected throughout the cosmos as one of the greatest negotiators in the galaxy. And she has the experience to support that claim after talking down the Seventh fleet of Akï¿½tek, preventing an angry mob from taking control of the cityship on three separate occasions and convincing the ruler previously incredibly hostile alien race to lay down his weapon and learn to play the guitar.*\r\nhttps://cdn.discordapp.com/attachments/472498975241666591/473110770381750283/first_officer.jpg",
+      "*The tower is the strongest building in the city, and is one of few with its own backup systems - emergency life support, waste reclaim, oxygen recycling. Built directly on top of the primary engine, it could technically serve as an independent ship if needed. In the event of a catastrophic failure in a critical system, all passengers are instructed to make their way to the most heavily shielded buildings in the city, these being the control tower, the hospital, the three shield generator stations and the council building.*\r\nhttps://cdn.discordapp.com/attachments/472498975241666591/473110831727509504/atlantis_2.jpg"
     ]
-  }, 
-{
+  },
+  {
     "Id": 2,
     "Name": "Police Station",
     "Content": [
-      "*The police station hasn't changed much since the days on earth and that was not due to luck. Some of the older members on council made sure to keep it as normal and friendly as possible as they wanted the police to keep feeling human. This doesn't mean that there are only human officers, but that they wanted to stay away as far as possible from mechanizing the corps. The biggest difference is that it has become much grander as it needs to be able to process all the paperwork of the entire city.*
-https://cdn.discordapp.com/attachments/455019174385942530/472775031005380619/b4fda2ac53db787c917006ce7a0cb26f.png",
-"*During the last years, the police hasn't been needed for a lot as most people understand that we need to band together to survive. This means that most officers have turned into quite the big softies who are used to only doing paperwork.
-
-Some call the corps incompetent, but everyone is relieved that they are lovely goofballs instead of brutal fighters as this means that there is nothing to fear from them. Most people like the force and there hasn't been an officer who died in the line of duty in 31 years and not a single civilian or criminal was killed during an arrest in 33 years.
-
-Officers drive in normal cars and work in pairs of two at all times. They carry stun guns instead of normal guns and have a body cam that is turned on at all times. Due to how peaceful things have been, they most of the time aren't that on guard and are rather easygoing.*
-https://cdn.discordapp.com/attachments/472498464043958292/472820627879886858/15662291-bad-good-cop-police.png"
+      "*The police station hasn't changed much since the days on earth and that was not due to luck. Some of the older members on council made sure to keep it as normal and friendly as possible as they wanted the police to keep feeling human. This doesn't mean that there are only human officers, but that they wanted to stay away as far as possible from mechanizing the corps. The biggest difference is that it has become much grander as it needs to be able to process all the paperwork of the entire city.*\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472775031005380619/b4fda2ac53db787c917006ce7a0cb26f.png",
+      "*During the last years, the police hasn't been needed for a lot as most people understand that we need to band together to survive. This means that most officers have turned into quite the big softies who are used to only doing paperwork.\r\n\r\nSome call the corps incompetent, but everyone is relieved that they are lovely goofballs instead of brutal fighters as this means that there is nothing to fear from them. Most people like the force and there hasn't been an officer who died in the line of duty in 31 years and not a single civilian or criminal was killed during an arrest in 33 years.\r\n\r\nOfficers drive in normal cars and work in pairs of two at all times. They carry stun guns instead of normal guns and have a body cam that is turned on at all times. Due to how peaceful things have been, they most of the time aren't that on guard and are rather easygoing.*\r\nhttps://cdn.discordapp.com/attachments/472498464043958292/472820627879886858/15662291-bad-good-cop-police.png"
     ]
   },
-{
+  {
     "Id": 3,
     "Name": "Hospital",
     "Content": [
-"*The hospital is the biggest and most luxurious building in the entire city. It comes with multiple wings and even has a large and well-kept garden. Multiple solar panels decorate the top of the building, making it function completely on its own, detached from any other systems.*
-https://cdn.discordapp.com/attachments/455019174385942530/472779842111275019/Lucas_Museum_of_Narrative_Art_-_Aerial_View_courtesy_of_MAD_Architects.png",
-"*The hospital accepts everyone for treatment, but of course criminals get placed in safe rooms that can be locked down and function like cells.
-
-The hospital staff exists of highly trained doctors and nurses who are aided by multiple droids who are able to perform a lot of basic scans on patients. The droids also help with monitoring the patient's physical condition and everyone who is brought in here gets a personal droid who can notify the doctors and nurses when something happens.*
-https://cdn.discordapp.com/attachments/455019174385942530/472782261784412163/3da8c1e75e75a270ea72f29b633bf6f7.jpg",
-"*The hospital has a few guards, but due to the peace they mostly serve as friendly employees who help visitors get to the place they want and who stop stubborn patients from leaving before they are treated. The hospital tries to avoid using healing magic as much as possible as they don't trust it enough to not have side-effects, but will use it if there is no other option.
-
-The hospital is sadly not free of charge, but the price one has to pay depends on the severity of the wound.*"
-
-]
-},
-{
+      "*The hospital is the biggest and most luxurious building in the entire city. It comes with multiple wings and even has a large and well-kept garden. Multiple solar panels decorate the top of the building, making it function completely on its own, detached from any other systems.*\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472779842111275019/Lucas_Museum_of_Narrative_Art_-_Aerial_View_courtesy_of_MAD_Architects.png",
+      "*The hospital accepts everyone for treatment, but of course criminals get placed in safe rooms that can be locked down and function like cells.\r\n\r\nThe hospital staff exists of highly trained doctors and nurses who are aided by multiple droids who are able to perform a lot of basic scans on patients. The droids also help with monitoring the patient's physical condition and everyone who is brought in here gets a personal droid who can notify the doctors and nurses when something happens.*\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472782261784412163/3da8c1e75e75a270ea72f29b633bf6f7.jpg",
+      "*The hospital has a few guards, but due to the peace they mostly serve as friendly employees who help visitors get to the place they want and who stop stubborn patients from leaving before they are treated. The hospital tries to avoid using healing magic as much as possible as they don't trust it enough to not have side-effects, but will use it if there is no other option.\r\n\r\nThe hospital is sadly not free of charge, but the price one has to pay depends on the severity of the wound.*"
+    ]
+  },
+  {
     "Id": 4,
     "Name": "The Marketplace",
     "Content": [
-"*The marketplace is one of the biggest buildings in the city, right behind Hamilton and the hospital, but it is easily the most densely crowded area in the entire city. It doesn't even become quieter at night as the highly advanced lighting system allows people to always shop in peace, no matter the time of day.*
-https://cdn.discordapp.com/attachments/455019174385942530/472784240338272256/meydan1.png",
-"*All kinds of stores can be found here that sell almost everything that hasn't been outlawed by the council for a reasonable price. The mall also has multiple places to buy simple food and drinks, making it the perfect place for a family trip.
-
-The mall has an advanced smoke clearing and a sprinkler system that allow them to put out most fires before they are even able to spread. It is possible for the police to lock the mall down with the user of metal shutters in case of emergency, but this feature has never been used in its existence.
-
-The higher you go into the mall, the more luxurious the goods they sell and the more diverse the races become as it is mostly the alien vendors who sell the most unique objects.*"
-
-]
-},
-{
+      "*The marketplace is one of the biggest buildings in the city, right behind Hamilton and the hospital, but it is easily the most densely crowded area in the entire city. It doesn't even become quieter at night as the highly advanced lighting system allows people to always shop in peace, no matter the time of day.*\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472784240338272256/meydan1.png",
+      "*All kinds of stores can be found here that sell almost everything that hasn't been outlawed by the council for a reasonable price. The mall also has multiple places to buy simple food and drinks, making it the perfect place for a family trip.\r\n\r\nThe mall has an advanced smoke clearing and a sprinkler system that allow them to put out most fires before they are even able to spread. It is possible for the police to lock the mall down with the user of metal shutters in case of emergency, but this feature has never been used in its existence.\r\n\r\nThe higher you go into the mall, the more luxurious the goods they sell and the more diverse the races become as it is mostly the alien vendors who sell the most unique objects.*"
+    ]
+  },
+  {
     "Id": 5,
     "Name": "Cinema",
     "Content": [
-"*The cinema oddly enough hasn't changed at all from the ones when humans left earth. The simple explanation for this is that while people could watch movies with a much greater quality, they don't want to.*
-https://cdn.discordapp.com/attachments/455019174385942530/472788880782000128/77392.png",
-"*Polls have shown that going to the cinema with a bunch of friends or family and buying overpriced snacks before going into a room filled with strangers is actually something that most people enjoy. The amount of human contact one can have is quite important and therefore they decided to keep the cinema the same.
-
-When the Aliens learned of humanities curious habit of making and watching movies they quickly became engrossed with it and started making their own, resulting in some rather peculiar, but interesting movies.
-
-The cinema is open to all ages and all races and due to it being government controlled the prices aren't even that high. Sunday is Classic day, meaning that some of the older movies from back on earth will be played.*"
-
-]
-},
-{
+      "*The cinema oddly enough hasn't changed at all from the ones when humans left earth. The simple explanation for this is that while people could watch movies with a much greater quality, they don't want to.*\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472788880782000128/77392.png",
+      "*Polls have shown that going to the cinema with a bunch of friends or family and buying overpriced snacks before going into a room filled with strangers is actually something that most people enjoy. The amount of human contact one can have is quite important and therefore they decided to keep the cinema the same.\r\n\r\nWhen the Aliens learned of humanities curious habit of making and watching movies they quickly became engrossed with it and started making their own, resulting in some rather peculiar, but interesting movies.\r\n\r\nThe cinema is open to all ages and all races and due to it being government controlled the prices aren't even that high. Sunday is Classic day, meaning that some of the older movies from back on earth will be played.*"
+    ]
+  },
+  {
     "Id": 6,
     "Name": "Casino",
     "Content": [
-"__**Blue Whaling Casino**__
-*'One would think, after losing their homeworld, the Terrans would have undergone some kind of moral evolution. To grasp hold of their vices, and desires, and cruelty- even if only slightly. But this building stands as a monument to humanity's avarice. Ever holding you back from ascention into something greater than yourselves-
-
-And that is why your species will not earn salvation.'*
-       -Hierophant Kree'arra of the Aegae to Councillor Roswell, during his tour of the Central Core
-https://cdn.discordapp.com/attachments/472499136525107222/472542581759279104/exterior.png",
-"*An expansive, lavishly furnished casino at the heart of the Leisure district, the Whaling Casino is by far the largest of its kind within the city. While on the surface, the establishment appears as the quintessentail casino: boasting everything from holographic poker to 2,000's style slot machines, those who know where to listen would hear the rumours of illegal, high-stakes gambling taking place somewhere within the Casino.
-
-An outlet for the elites, though anyone with money in their pocket is welcome to try their hand inside. Money changes hands at an extraordinary pace, and the house makes a minute, but tolerable profit.*
-https://cdn.discordapp.com/attachments/472499136525107222/472546327692312578/interior.jpg",
-"*Supposedly, a talented man with his wits about him can make his fortune within a few hours.
-
-But it's been ten years since that last happened.
-
-As a side-note, the casino has a small bar, and a remarkable aquarium of both Terran and Alien fauna. While it's odd to consider a casino to be a relaxing place, many customers find their nerves soothed by the unfitting decor.*
-https://cdn.discordapp.com/attachments/472499136525107222/472547749514969129/KOF-XIV-Stage-Hotel-Marine-Paradise.jpg",
-"__**Mr. White**__
-*While not the founder, Mr. White has overseen the casino's growth for the past thirty years. As both the owner and manager of the establishment, there is no doubt that the man is one of the city's shadiest characters. But, given the difficulty of assembling concrete evidence against him, it's little surprise that Mr. and Mrs. White have finally began to relax.
-
-He's occasionally seen making small talk with other shady-looking men, or leading reputable gentlemen into backrooms. What a nice fellow!* 
-https://cdn.discordapp.com/attachments/472499136525107222/472549990103908372/notkindgice.jpg"
-
-]
-},
-{
+      "__**Blue Whaling Casino**__\r\n*'One would think, after losing their homeworld, the Terrans would have undergone some kind of moral evolution. To grasp hold of their vices, and desires, and cruelty- even if only slightly. But this building stands as a monument to humanity's avarice. Ever holding you back from ascention into something greater than yourselves-\r\n\r\nAnd that is why your species will not earn salvation.'*\r\n       -Hierophant Kree'arra of the Aegae to Councillor Roswell, during his tour of the Central Core\r\nhttps://cdn.discordapp.com/attachments/472499136525107222/472542581759279104/exterior.png",
+      "*An expansive, lavishly furnished casino at the heart of the Leisure district, the Whaling Casino is by far the largest of its kind within the city. While on the surface, the establishment appears as the quintessentail casino: boasting everything from holographic poker to 2,000's style slot machines, those who know where to listen would hear the rumours of illegal, high-stakes gambling taking place somewhere within the Casino.\r\n\r\nAn outlet for the elites, though anyone with money in their pocket is welcome to try their hand inside. Money changes hands at an extraordinary pace, and the house makes a minute, but tolerable profit.*\r\nhttps://cdn.discordapp.com/attachments/472499136525107222/472546327692312578/interior.jpg",
+      "*Supposedly, a talented man with his wits about him can make his fortune within a few hours.\r\n\r\nBut it's been ten years since that last happened.\r\n\r\nAs a side-note, the casino has a small bar, and a remarkable aquarium of both Terran and Alien fauna. While it's odd to consider a casino to be a relaxing place, many customers find their nerves soothed by the unfitting decor.*\r\nhttps://cdn.discordapp.com/attachments/472499136525107222/472547749514969129/KOF-XIV-Stage-Hotel-Marine-Paradise.jpg",
+      "__**Mr. White**__\r\n*While not the founder, Mr. White has overseen the casino's growth for the past thirty years. As both the owner and manager of the establishment, there is no doubt that the man is one of the city's shadiest characters. But, given the difficulty of assembling concrete evidence against him, it's little surprise that Mr. and Mrs. White have finally began to relax.\r\n\r\nHe's occasionally seen making small talk with other shady-looking men, or leading reputable gentlemen into backrooms. What a nice fellow!* \r\nhttps://cdn.discordapp.com/attachments/472499136525107222/472549990103908372/notkindgice.jpg"
+    ]
+  },
+  {
     "Id": 7,
     "Name": "The Mixer",
     "Content": [
-"*Welcome to the Mixer, the hippest cafe in the entire city!* 
-https://cdn.discordapp.com/attachments/455019174385942530/472794578794184704/Krysha-designrulz-1.png",
-"*The mixer derives its name from the amazing drinks they developed by mixing classical human drinks like fruit juices and cocktails with drinks made by the aliens. The results simply taste amazing and are hugely popular with everyone in the city.
-
-Especially aliens visit this place often as it also serves the best quality human drinks, something they have grown to enjoy and love. Most aliens are still a bit wary around alcohol as they don't trust the substance, but others gave in completely and turned into real alcohol lovers that can drink even the best human drinkers under the table.*"
-
-]
-},
-{
+      "*Welcome to the Mixer, the hippest cafe in the entire city!* \r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472794578794184704/Krysha-designrulz-1.png",
+      "*The mixer derives its name from the amazing drinks they developed by mixing classical human drinks like fruit juices and cocktails with drinks made by the aliens. The results simply taste amazing and are hugely popular with everyone in the city.\r\n\r\nEspecially aliens visit this place often as it also serves the best quality human drinks, something they have grown to enjoy and love. Most aliens are still a bit wary around alcohol as they don't trust the substance, but others gave in completely and turned into real alcohol lovers that can drink even the best human drinkers under the table.*"
+    ]
+  },
+  {
     "Id": 8,
     "Name": "Interstellar",
     "Content": [
-"*Welcome to the interstellar restaurant! The most diverse restaurant on the entire station!
-
-The interstellar restaurant prides itself on how diverse their cooks are, allowing them to cater to the needs of almost every race and serve them dishes from their home planet.
-
-The prices are quite low as they are not too fancy a restaurant, but more one where families and friends go to eat when they want to have a fun day out. The interstellar restaurant lies quite close to the cinema, making it perfect for a combo trip.* 
-https://cdn.discordapp.com/attachments/455019174385942530/472790458645610549/1708219.png",
-"*There also is a VIP section on the second floor of the restaurant. This section is close to impossible to get a booking in without having the right connections. The amount of shady dealing done here is rivaled only by the casino.
-
-The VIP section is decorated in a much more ornate and fancy human style and most of the staff and guests are also human. The dishes server here are dishes that were even considered to be of high quality back on earth when there resources enough and therefore the price of dining in this place is truly exorbitant.* 
-https://cdn.discordapp.com/attachments/472498644843626507/472793429777055744/primediningroom.png"
-
-]
-},
-{
+      "*Welcome to the interstellar restaurant! The most diverse restaurant on the entire station!\r\n\r\nThe interstellar restaurant prides itself on how diverse their cooks are, allowing them to cater to the needs of almost every race and serve them dishes from their home planet.\r\n\r\nThe prices are quite low as they are not too fancy a restaurant, but more one where families and friends go to eat when they want to have a fun day out. The interstellar restaurant lies quite close to the cinema, making it perfect for a combo trip.* \r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472790458645610549/1708219.png",
+      "*There also is a VIP section on the second floor of the restaurant. This section is close to impossible to get a booking in without having the right connections. The amount of shady dealing done here is rivaled only by the casino.\r\n\r\nThe VIP section is decorated in a much more ornate and fancy human style and most of the staff and guests are also human. The dishes server here are dishes that were even considered to be of high quality back on earth when there resources enough and therefore the price of dining in this place is truly exorbitant.* \r\nhttps://cdn.discordapp.com/attachments/472498644843626507/472793429777055744/primediningroom.png"
+    ]
+  },
+  {
     "Id": 9,
     "Name": "Hamilton Residential",
     "Content": [
-"*Welcome to the Hamilton residential complex, one of the biggest living areas on Prometheus. In Hamilton you have people from all classes living in the different sections of the building complex.*
-https://cdn.discordapp.com/attachments/455019174385942530/472767078328303626/564363abdd0895c9188b4901-750-500.png", 
-"*The higher you go, the more a resident has to pay and the more luxurious the apartment. You know that you have made it in life when you live in one of the upper floors of Hamilton. The penthouses are filled with some of the most influential people in the entire city who live there in peace and serenity.
-
-The Hamilton complex has multiple pools on the lower levels for the residents to relax in and even some pools on top of the apartments for the VIP's to relax and unwind away from the common rabble.
-
-People can freely enter Hamilton, even without being a resident, but the individual apartments are locked behind heavy doors with individual entrance codes. The only exception to this is the upper rooms. Three-fourths of the way up there are multiple armed checkpoints that only allow VIP's with the right clearance to access these floors.*"
-
-]
-},
-{
+      "*Welcome to the Hamilton residential complex, one of the biggest living areas on Prometheus. In Hamilton you have people from all classes living in the different sections of the building complex.*\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472767078328303626/564363abdd0895c9188b4901-750-500.png",
+      "*The higher you go, the more a resident has to pay and the more luxurious the apartment. You know that you have made it in life when you live in one of the upper floors of Hamilton. The penthouses are filled with some of the most influential people in the entire city who live there in peace and serenity.\r\n\r\nThe Hamilton complex has multiple pools on the lower levels for the residents to relax in and even some pools on top of the apartments for the VIP's to relax and unwind away from the common rabble.\r\n\r\nPeople can freely enter Hamilton, even without being a resident, but the individual apartments are locked behind heavy doors with individual entrance codes. The only exception to this is the upper rooms. Three-fourths of the way up there are multiple armed checkpoints that only allow VIP's with the right clearance to access these floors.*"
+    ]
+  },
+  {
     "Id": 10,
     "Name": "City Park",
     "Content": [
-"https://cdn.discordapp.com/attachments/472497669655494656/472890455965564938/canyon_city_01_by_2buiart-daoqgsu.jpg", 
-"*Prometheus' sprawling gardens lace the north-eastern pier, housing both Terran and alien flora. The gardens are meticulously maintained by skilled gardeners and botanists, in the event that a planet suitable for terraforming is discovered.*
-https://cdn.discordapp.com/attachments/472497669655494656/472890693761630220/garden_city_by_darkhikarii-d6sthei.jpg", 
-"*The park is undoubtedly the biggest drain on water within the city: while it subsidises the air filtration and yields a minute amount of food per annum, the Council only continues to maintain the park for its psychological benefit to passengers.*
-https://cdn.discordapp.com/attachments/472497669655494656/472890884183031828/futuristic_city_2_by_joakimolofsson-d59agkh.png", 
-"*Small Terran mammals, avians and insects maintain a reasonably stable ecosystem within the park. Or, rather, nobody reported that badgers had gotten on board before we took off, and exterminating them is more trouble than it's worth.*
-https://cdn.discordapp.com/attachments/472497669655494656/472891035341684736/garden_enviro_by_graphicmedic-d85ahgp.png", 
-"*Some areas of the park are as dense as a forest, though the majority is open and clean. 
-
-Keep off the grass.*"
-
-]
-},
-{
+      "https://cdn.discordapp.com/attachments/472497669655494656/472890455965564938/canyon_city_01_by_2buiart-daoqgsu.jpg",
+      "*Prometheus' sprawling gardens lace the north-eastern pier, housing both Terran and alien flora. The gardens are meticulously maintained by skilled gardeners and botanists, in the event that a planet suitable for terraforming is discovered.*\r\nhttps://cdn.discordapp.com/attachments/472497669655494656/472890693761630220/garden_city_by_darkhikarii-d6sthei.jpg",
+      "*The park is undoubtedly the biggest drain on water within the city: while it subsidises the air filtration and yields a minute amount of food per annum, the Council only continues to maintain the park for its psychological benefit to passengers.*\r\nhttps://cdn.discordapp.com/attachments/472497669655494656/472890884183031828/futuristic_city_2_by_joakimolofsson-d59agkh.png",
+      "*Small Terran mammals, avians and insects maintain a reasonably stable ecosystem within the park. Or, rather, nobody reported that badgers had gotten on board before we took off, and exterminating them is more trouble than it's worth.*\r\nhttps://cdn.discordapp.com/attachments/472497669655494656/472891035341684736/garden_enviro_by_graphicmedic-d85ahgp.png",
+      "*Some areas of the park are as dense as a forest, though the majority is open and clean. \r\n\r\nKeep off the grass.*"
+    ]
+  },
+  {
     "Id": 11,
     "Name": "Engine Room",
     "Content": [
-"https://cdn.discordapp.com/attachments/472533881942442007/473133137472389120/engine_room_1.jpg", 
-"*The Stardrive truly is the pinnacle of Terran scientific discovery, allowing Terran Cityships to warp spacetime and cross impossibly huge distances in a matter of days.*
-https://cdn.discordapp.com/attachments/472533881942442007/473133209480069121/engine_room_2.jpg", 
-"*Only problem: Its fuel usage is huge. In the year preceding the evacuation, only enough fuel was created for thirteen long range Stardrive jumps, and was split evenly between the thirteen ships. This meant that when the Prometheus’ Stardrive missed its mark, it had depleted all of its fuel and was unable to perform another jump to its intended coordinates. Since then, it has been on a mission to return, stopping off at alien planets and space stations, always searching for more fuel or ways to synthesise more onboard. This has had limited success, as the ship has since executed seventeen short-range Stardrive jumps, each one getting them slightly closer towards their next destination and into the range of a potentially habitable star system.*
-https://cdn.discordapp.com/attachments/472533881942442007/473133263989243905/engine_room_3.jpg", 
-"*While the Stardrive remains largely inoperative apart from its rare jumps, the Engine Room is also home to a huge array of nuclear fission reactors, powering everything else from the force field generators to the impulse engines to the life support systems. A muted humming noise is always heard throughout the Engine Room, as incredibly intricate equipment continues running as if it had just been built, and its dedicated engineers tune it up and keep it running at peak efficiency.*
-https://cdn.discordapp.com/attachments/472533881942442007/473133319719092224/engine_room_4.jpg", 
-"*The Engine Room was not always like this, however. It was only recently that a new chief engineer took over - or, well, chief engineers. Before this, there were constant power outages throughout the ship, and emergency life support systems only managed to keep running through the use of backup generators and battery arrays. The Engine Rooms had been neglected for too long, and it showed. Even the noise was all wrong - groaning noises were heard from the ship, and fuel leaks were common - causing constant fear among the general population that the once pioneering Cityship was on its last legs. And yet, when young brother and sister Zara Valdez and Leo Valdez took over as the joint chief engineers of the Prometheus, they whipped it back into shape within weeks with their boundless energy and impressive knowledge. The engineers under their command stopped slacking, and the quiet hum returned to the ship engines, as all was as it should be again.*
-https://cdn.discordapp.com/attachments/472533881942442007/473137335924686848/engine_room_5.jpg
-https://cdn.discordapp.com/attachments/472533881942442007/473137338466304031/engine_room_6.png
-"
-
-]
-},
-{
+      "https://cdn.discordapp.com/attachments/472533881942442007/473133137472389120/engine_room_1.jpg",
+      "*The Stardrive truly is the pinnacle of Terran scientific discovery, allowing Terran Cityships to warp spacetime and cross impossibly huge distances in a matter of days.*\r\nhttps://cdn.discordapp.com/attachments/472533881942442007/473133209480069121/engine_room_2.jpg",
+      "*Only problem: Its fuel usage is huge. In the year preceding the evacuation, only enough fuel was created for thirteen long range Stardrive jumps, and was split evenly between the thirteen ships. This meant that when the Prometheusï¿½ Stardrive missed its mark, it had depleted all of its fuel and was unable to perform another jump to its intended coordinates. Since then, it has been on a mission to return, stopping off at alien planets and space stations, always searching for more fuel or ways to synthesise more onboard. This has had limited success, as the ship has since executed seventeen short-range Stardrive jumps, each one getting them slightly closer towards their next destination and into the range of a potentially habitable star system.*\r\nhttps://cdn.discordapp.com/attachments/472533881942442007/473133263989243905/engine_room_3.jpg",
+      "*While the Stardrive remains largely inoperative apart from its rare jumps, the Engine Room is also home to a huge array of nuclear fission reactors, powering everything else from the force field generators to the impulse engines to the life support systems. A muted humming noise is always heard throughout the Engine Room, as incredibly intricate equipment continues running as if it had just been built, and its dedicated engineers tune it up and keep it running at peak efficiency.*\r\nhttps://cdn.discordapp.com/attachments/472533881942442007/473133319719092224/engine_room_4.jpg",
+      "*The Engine Room was not always like this, however. It was only recently that a new chief engineer took over - or, well, chief engineers. Before this, there were constant power outages throughout the ship, and emergency life support systems only managed to keep running through the use of backup generators and battery arrays. The Engine Rooms had been neglected for too long, and it showed. Even the noise was all wrong - groaning noises were heard from the ship, and fuel leaks were common - causing constant fear among the general population that the once pioneering Cityship was on its last legs. And yet, when young brother and sister Zara Valdez and Leo Valdez took over as the joint chief engineers of the Prometheus, they whipped it back into shape within weeks with their boundless energy and impressive knowledge. The engineers under their command stopped slacking, and the quiet hum returned to the ship engines, as all was as it should be again.*\r\nhttps://cdn.discordapp.com/attachments/472533881942442007/473137335924686848/engine_room_5.jpg\r\nhttps://cdn.discordapp.com/attachments/472533881942442007/473137338466304031/engine_room_6.png\r\n"
+    ]
+  },
+  {
     "Id": 12,
     "Name": "Hydroponics Bay",
     "Content": [
-"*The hydroponics bay is the true lifeblood of the city. Providing both food and a breathable atmosphere to the Prometheus, it is one of the most essential parts of the ship.*
-https://cdn.discordapp.com/attachments/472498104441241601/473114786905980928/hydroponics_1.jpg", 
-"*Nutrients stripped out of water are diverted here from the Waste Reclaim plant, in order to complete the cycle and minimise wastage. Few people work here, as most of the process is automated, and the building is mostly locked down. Still, the main corridor and a few of the smaller bays are open during visiting hours, for a small fee.*
-https://cdn.discordapp.com/attachments/472498104441241601/473114830744584222/hydroponics_2.jpg", 
-"*On the south end of the Hydroponics Bay building, there is a small observation deck, where some of the resident botanists installed a water feature and greenery. It is a very peaceful, calm place to visit and look out at the cosmos, and is a favourite spot when coming in to land on an alien planet, or dock at an alien space station. It is free to get into this section, as it is not officially recognised to exist on the city plans.*
-https://cdn.discordapp.com/attachments/472498104441241601/473114869546221588/hydroponics_3.jpg"
-
-]
-},
-{
+      "*The hydroponics bay is the true lifeblood of the city. Providing both food and a breathable atmosphere to the Prometheus, it is one of the most essential parts of the ship.*\r\nhttps://cdn.discordapp.com/attachments/472498104441241601/473114786905980928/hydroponics_1.jpg",
+      "*Nutrients stripped out of water are diverted here from the Waste Reclaim plant, in order to complete the cycle and minimise wastage. Few people work here, as most of the process is automated, and the building is mostly locked down. Still, the main corridor and a few of the smaller bays are open during visiting hours, for a small fee.*\r\nhttps://cdn.discordapp.com/attachments/472498104441241601/473114830744584222/hydroponics_2.jpg",
+      "*On the south end of the Hydroponics Bay building, there is a small observation deck, where some of the resident botanists installed a water feature and greenery. It is a very peaceful, calm place to visit and look out at the cosmos, and is a favourite spot when coming in to land on an alien planet, or dock at an alien space station. It is free to get into this section, as it is not officially recognised to exist on the city plans.*\r\nhttps://cdn.discordapp.com/attachments/472498104441241601/473114869546221588/hydroponics_3.jpg"
+    ]
+  },
+  {
     "Id": 13,
     "Name": "Linden Residential",
     "Content": [
-"*Linden residential complex is a more classical human residential area. The place is littered with apartment complexes as there was no space to build full houses on the spaceships. In Linden residential complex there live an equal amount of Aliens and humans and there is no real difference in quality among the apartments.
-
-Most people who live in Linden are part of the city's middle class and live a quiet and peaceful life in here. The only real limit on entering this place is that you will need to identify yourself at the door with your passport before the door will open. It is also possible to press the button and dial the owner of the house you are visiting and have them give you permission to enter the place. If this happens all the misdeeds of the guest will be blamed on the host.
-
-There is close to no staff here except for a few janitors and window washers.*
-
-https://cdn.discordapp.com/attachments/455019174385942530/472797982509498368/best-apartment-building-design-futuristic-and-stunning-apartment-design-architecture-apartment-build.png"
-
-]
-},
-{
+      "*Linden residential complex is a more classical human residential area. The place is littered with apartment complexes as there was no space to build full houses on the spaceships. In Linden residential complex there live an equal amount of Aliens and humans and there is no real difference in quality among the apartments.\r\n\r\nMost people who live in Linden are part of the city's middle class and live a quiet and peaceful life in here. The only real limit on entering this place is that you will need to identify yourself at the door with your passport before the door will open. It is also possible to press the button and dial the owner of the house you are visiting and have them give you permission to enter the place. If this happens all the misdeeds of the guest will be blamed on the host.\r\n\r\nThere is close to no staff here except for a few janitors and window washers.*\r\n\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472797982509498368/best-apartment-building-design-futuristic-and-stunning-apartment-design-architecture-apartment-build.png"
+    ]
+  },
+  {
     "Id": 14,
     "Name": "Tunnels",
     "Content": [
-"*The underground is connected by a massive complex of tunnels that most non-natives won't be able to navigate through. If someone from the surface would like to visit the undergrounds it is recommended to find a guide first as otherwise, they might end up in very dangerous locations.
-
-The tunnels are remnants of the construction process, but the citizens of the underground have used their resources to expand them as they are their lifeblood.
-
-The tunnels are far from a safe location as multiple criminals often prowl these places, hoping to find an easy target for a mugging or a quick kidnapping or robbery. It is recommended that the only ones who enter this place are those who have some combat capabilities.*
-
-https://cdn.discordapp.com/attachments/455019174385942530/472803258700791818/2015-JAN-Underground-Dungeon-Passage-by-nilTrace-300x247.png"
-
-]
-},
-{
+      "*The underground is connected by a massive complex of tunnels that most non-natives won't be able to navigate through. If someone from the surface would like to visit the undergrounds it is recommended to find a guide first as otherwise, they might end up in very dangerous locations.\r\n\r\nThe tunnels are remnants of the construction process, but the citizens of the underground have used their resources to expand them as they are their lifeblood.\r\n\r\nThe tunnels are far from a safe location as multiple criminals often prowl these places, hoping to find an easy target for a mugging or a quick kidnapping or robbery. It is recommended that the only ones who enter this place are those who have some combat capabilities.*\r\n\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472803258700791818/2015-JAN-Underground-Dungeon-Passage-by-nilTrace-300x247.png"
+    ]
+  },
+  {
     "Id": 15,
     "Name": "Black Market",
     "Content": [
-"*The black market is almost as densely packed as the normal market and you can find here literally everything. If the black market doesn't sell it then no one will. The place is heavily guarded by mercenaries paid by shop owners who keep order with a heavy hand.
-
-Stealing isn't recommended as you will most likely end up dead if you are caught or you will be forced to pay repairs and for those who can't pay there are multiple other options, each as nasty as the previous one.
-
-The black market mainly sells things like guns, drugs, organs and all the other outlawed goods one would expect to be present in the black market. The black market has no real owner and shootouts between rival gangs are quite common.*
-https://cdn.discordapp.com/attachments/455019174385942530/472808941424869387/janurschel.png"
-
-]
-},
-{
+      "*The black market is almost as densely packed as the normal market and you can find here literally everything. If the black market doesn't sell it then no one will. The place is heavily guarded by mercenaries paid by shop owners who keep order with a heavy hand.\r\n\r\nStealing isn't recommended as you will most likely end up dead if you are caught or you will be forced to pay repairs and for those who can't pay there are multiple other options, each as nasty as the previous one.\r\n\r\nThe black market mainly sells things like guns, drugs, organs and all the other outlawed goods one would expect to be present in the black market. The black market has no real owner and shootouts between rival gangs are quite common.*\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472808941424869387/janurschel.png"
+    ]
+  },
+  {
     "Id": 16,
     "Name": "Quickshot Bar",
     "Content": [
-"*The Quickshot bar lends its name to the fact that locals can get a quick and cheap shot of alcohol here and that outsiders have the habit of getting shot quickly after entering.
-
-The quick shot bar has no real guards or anything, instead every local is the guard in return for cheaper drinks. This place is extremely dangerous to non-locals who try to create trouble as they will have a brawl on their hands before they can even blink as the men and woman here take their cheap drinks very seriously.*
-
-https://cdn.discordapp.com/attachments/455019174385942530/472806346270572544/A2V733H94T8F0001.png", 
-
-"*Tucker, the owner of the bar, is no pushover and is often seen drinking in his own bar. He is the closest thing you will find to an information broker in the underground and will give you all the tips and tricks you need to survive in here, given that you are willing to pay the right price of course.
-
-He is quite an easygoing and lazy man and rather lenient, as long as you don't damage his shitty bar even further, the last men who tried now is rotting somewhere on a compost heap as no one can be bothered to bury someone in the underground.*
-
-https://cdn.discordapp.com/attachments/455019174385942530/472806317900169226/cyberpunk-dues-ex-hr-001_8065.png"
-
-]
-},
-{
+      "*The Quickshot bar lends its name to the fact that locals can get a quick and cheap shot of alcohol here and that outsiders have the habit of getting shot quickly after entering.\r\n\r\nThe quick shot bar has no real guards or anything, instead every local is the guard in return for cheaper drinks. This place is extremely dangerous to non-locals who try to create trouble as they will have a brawl on their hands before they can even blink as the men and woman here take their cheap drinks very seriously.*\r\n\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472806346270572544/A2V733H94T8F0001.png",
+      "*Tucker, the owner of the bar, is no pushover and is often seen drinking in his own bar. He is the closest thing you will find to an information broker in the underground and will give you all the tips and tricks you need to survive in here, given that you are willing to pay the right price of course.\r\n\r\nHe is quite an easygoing and lazy man and rather lenient, as long as you don't damage his shitty bar even further, the last men who tried now is rotting somewhere on a compost heap as no one can be bothered to bury someone in the underground.*\r\n\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472806317900169226/cyberpunk-dues-ex-hr-001_8065.png"
+    ]
+  },
+  {
     "Id": 17,
     "Name": "Slums",
     "Content": [
-"*The city is quite beautiful on the surface, but like every place, it holds its own dark secrets. These secrets are contained in the slums, a part of the underground. In the past, the underground didn't exist and were merely empty rooms that weren't finished yet before the take-off and tunnels that were built during the construction period of the ship, but now so many years later it has turned into its own community with its own culture.*
-https://cdn.discordapp.com/attachments/455019174385942530/472800248490885150/jonada_city___underground_by_w_e_z-d5mzkfh.png", 
-
-"*The slums is the place where most of the citizens who don't fit in with the more civil and controlled life aboveground. Alien races with more frowned upon tendencies prefer to retreat here, just like the shadier humans. The slums are completely lawless meaning that multiple gangs strive to take control of the complex with a population that is almost a third of the entire cities population.
-
-In the slums it is normal that you show respect to those stronger and if you don't you will most likely find yourself with a knife in your gut while you are bleeding out in an alley, stripped of your possessions and sometimes even organs.
-
-A very important thing is that originally no one was forced to live here, they chose to. The problem now is that most people born in the slums have no papers and therefore aren't seen as citizens of the city, something which, in combination with their problematic behavior, makes it so they can't freely leave the slums to live with the rest of the city.
-
-The slums are unironically the safest part of the city as it doesn't have the beasts of the wastelands, the muggers of the tunnels, the thugs of the bar or the crazed killers from the junkheap.*"
-
-]
-}
+      "*The city is quite beautiful on the surface, but like every place, it holds its own dark secrets. These secrets are contained in the slums, a part of the underground. In the past, the underground didn't exist and were merely empty rooms that weren't finished yet before the take-off and tunnels that were built during the construction period of the ship, but now so many years later it has turned into its own community with its own culture.*\r\nhttps://cdn.discordapp.com/attachments/455019174385942530/472800248490885150/jonada_city___underground_by_w_e_z-d5mzkfh.png",
+      "*The slums is the place where most of the citizens who don't fit in with the more civil and controlled life aboveground. Alien races with more frowned upon tendencies prefer to retreat here, just like the shadier humans. The slums are completely lawless meaning that multiple gangs strive to take control of the complex with a population that is almost a third of the entire cities population.\r\n\r\nIn the slums it is normal that you show respect to those stronger and if you don't you will most likely find yourself with a knife in your gut while you are bleeding out in an alley, stripped of your possessions and sometimes even organs.\r\n\r\nA very important thing is that originally no one was forced to live here, they chose to. The problem now is that most people born in the slums have no papers and therefore aren't seen as citizens of the city, something which, in combination with their problematic behavior, makes it so they can't freely leave the slums to live with the rest of the city.\r\n\r\nThe slums are unironically the safest part of the city as it doesn't have the beasts of the wastelands, the muggers of the tunnels, the thugs of the bar or the crazed killers from the junkheap.*"
+    ]
+  }
 ]

@@ -1,9 +1,6 @@
 ﻿using DSharpPlus.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RPBot
 {
@@ -21,6 +18,7 @@ namespace RPBot
             public UserData UserData { get; set; }
             public StatData Stats { get; set; }
             public ModData ModData { get; set; }
+
         }
 
         public class UserData
@@ -28,13 +26,31 @@ namespace RPBot
             public UserData(ulong userID)
             {
                 this.UserID = userID;
-                GuildIDs = new List<int>();
+                FactionID = 0;
                 Money = 0;
+                Xp = 0;
             }
 
             public int Money { get; set; }
+            public int Xp { get; set; }
             public ulong UserID { get; set; }
-            public List<int> GuildIDs { get; set; }
+            public int FactionID { get; set; }
+
+            public string GetRank()
+            {
+                int rank = Xp;
+                string UserRank = "Tier 10";
+                if (rank < 20000) UserRank = "Tier 9";
+                if (rank < 17000) UserRank = "Tier 8";
+                if (rank < 14000) UserRank = "Tier 7";
+                if (rank < 11000) UserRank = "Tier 6";
+                if (rank < 8000) UserRank = "Tier 5";
+                if (rank < 6000) UserRank = "Tier 4";
+                if (rank < 4000) UserRank = "Tier 3";
+                if (rank < 2000) UserRank = "Tier 2";
+                if (rank < 1000) UserRank = "Tier 1";
+                return UserRank;
+            }
         }
 
         public class StatData

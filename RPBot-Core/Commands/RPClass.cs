@@ -26,11 +26,15 @@ namespace RPBot
         public static DiscordChannel InstanceCategory;
         public static DiscordChannel LogChannel;
         public static DiscordChannel GeneralChannel;
+        public static DiscordChannel XPChannel;
+        public static DiscordChannel StatsChannel;
+        public static DiscordChannel GuildChannel;
+
         public static DiscordRole StaffRole;
         public static DiscordRole HelpfulRole;
         public static DiscordRole PunishedRole;
         public static DiscordRole AdminRole;
-
+        public static List<ulong> RoleIDs = new List<ulong>() { 472534171961786368, 472534239611453469, 472534316908544001, 472534335493505034, 472534573117472778 };
         public static DiscordGuild RPGuild;
         public static Random Random = new Random();
         

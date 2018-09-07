@@ -88,6 +88,7 @@ namespace RPBot
             CommandsNextService.RegisterCommands(typeof(WikiClass));
             CommandsNextService.RegisterCommands(typeof(StatsClass));
             CommandsNextService.RegisterCommands(typeof(SignupClass));
+            CommandsNextService.RegisterCommands(typeof(XPClass));
 
 
             // WikiClass.InitWiki();
@@ -301,7 +302,11 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 }
                 RPClass.ApprovalsCategory = e.Guild.GetChannel(471836412996747274);
                 RPClass.InstanceCategory = e.Guild.GetChannel(473597059316973579);
+                RPClass.XPChannel = e.Guild.GetChannel(487627384217141250);
+                RPClass.StatsChannel = e.Guild.GetChannel(487659258134134784);
+                RPClass.GuildChannel = e.Guild.GetChannel(487627478010036244);
                 RPClass.StaffRole = e.Guild.GetRole(471840828449357879);
+
                 RPClass.HelpfulRole = e.Guild.GetRole(472504792879595520);
                 RPClass.PunishedRole = e.Guild.GetRole(473496184401428502);
                 RPClass.AdminRole = e.Guild.GetRole(471850713111068682);
@@ -472,8 +477,8 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
             {
-                Title = "You failure at life.",
-                Description = "You fucked it up, didn't you. You are a mess. You are a disgrace. There's a door, use it and never come back,you miserable piece of shit.",
+                Title = "RIP",
+                Description = ";-;",
                 Color = new DiscordColor(0xFF0000),
                 Timestamp = DateTime.UtcNow
             }
@@ -482,7 +487,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             .AddField("Stack trace", $"```cs\n{st}\n```")
             .AddField("Source", e.Exception.Source)
             .AddField("Message", e.Exception.Message);
-            await e.Context.RespondAsync("Message errored. Go bug J.C.");
+            await e.Context.RespondAsync("Command errored.");
             await RPClass.LogChannel.SendMessageAsync("", embed: embed);
         }
 
@@ -491,15 +496,32 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             Discord.DebugLogger.LogMessage(LogLevel.Info, "CommandsNext", $"{e.Context.User.Username} executed {e.Command.Name} in {e.Context.Channel.Name}", DateTime.UtcNow);
         }
 
-        public async Task UpdateUserList(DiscordGuild e)
+        public static async Task UpdateUserList(DiscordGuild e)
         {
-            foreach (var user in await e.GetAllMembersAsync())
+            var discordMembers = await e.GetAllMembersAsync();
+            foreach (var user in discordMembers)
             {
                 if (!RPClass.Users.Any(x => x.UserData.UserID == user.Id))
                 {
                     RPClass.Users.Add(new UserObject.RootObject(user.Id));
                 }
             }
+
+            await XPClass.UpdateStats();
+            await XPClass.UpdatePlayerRanking(e);
+            await XPClass.UpdateGuildRanking(e);
+            /*
+            foreach (var user in RPClass.Users)
+            {
+                if (user.UserData.Xp > 0)
+                {
+                    var member = discordMembers.First(x => x.Id == user.UserData.UserID);
+                    if (member.Roles.Any(x => RPClass.RoleIDs.Contains(x.Id)) && )
+                    {
+
+                    }
+                }
+            }*/
         }
     }
 }

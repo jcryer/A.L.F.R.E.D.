@@ -2,8 +2,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 64751081975975936,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -25,8 +26,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 344274343804534794,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -48,8 +50,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 425748875358371842,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -71,8 +74,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 322120939850563584,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -94,8 +98,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 199996479161630720,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -117,8 +122,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 209011880696479744,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -140,8 +146,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 58917839020494848,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -163,8 +170,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 158284124770140161,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -186,8 +194,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 321501319095517185,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -209,8 +218,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 258447102831493130,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -232,8 +242,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 473606000717463562,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -255,8 +266,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 266732358118408192,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -278,8 +290,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 375710268442804236,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -301,8 +314,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 162597717271379968,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -324,8 +338,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 365938029640024064,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -347,8 +362,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 221576298743595009,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -370,8 +386,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 192287928611766281,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -393,8 +410,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 112392146782318592,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -416,8 +434,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 310863110951010306,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -439,8 +458,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 296875172198350848,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -462,8 +482,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 410221896190394391,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -519,8 +540,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 327354503563051011,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -542,8 +564,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 19010,
       "UserID": 126070623855312896,
-      "GuildIDs": []
+      "FactionID": 1
     },
     "Stats": {
       "Melee": 0,
@@ -565,8 +588,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 247387080437661696,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -588,8 +612,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 124102469646024704,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -611,8 +636,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 292032014851375106,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -634,8 +660,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 207830454089285632,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -657,8 +684,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 253946322804015104,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -680,8 +708,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 241973301260320768,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -703,8 +732,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 280686912107315200,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -726,8 +756,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 234395307759108106,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -749,8 +780,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 340729390088323072,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -772,8 +804,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 234319272376139777,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -795,8 +828,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 437237473878343691,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -818,8 +852,9 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 392123818749067265,
-      "GuildIDs": []
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,
@@ -841,8 +876,657 @@
   {
     "UserData": {
       "Money": 0,
+      "Xp": 0,
       "UserID": 366350762437246981,
-      "GuildIDs": []
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 285496656470867988,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 232238559577243648,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 480041923810426881,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 175897323325358082,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 199033828348657664,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 206162720817545218,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 465614205219766272,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 319073369154912257,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 377555255371759619,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 235088799074484224,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 427591174262489100,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 224553827414573066,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 263117810912329728,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 259194887134642176,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 358907314503417856,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 254377665073512451,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 351955028459913227,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 486230453297348676,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 389590546810929173,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 440613147032944651,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 284842370246377474,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 313024849314578442,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 235425370914947083,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 188328304670015488,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 245774738050252803,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 198458539046338560,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 187027544711757824,
+      "FactionID": 0
     },
     "Stats": {
       "Melee": 0,

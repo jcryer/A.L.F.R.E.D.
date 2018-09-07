@@ -19,5 +19,17 @@ namespace RPBot
             public int Id { get; set; }
             public string Name { get; set; }
         }
+
+        public class StatSheetObject
+        {
+            public string Name;
+            public int Xp;
+
+            public StatSheetObject(string name, int xp)
+            {
+                Name = name;
+                Xp = xp;
+            }
+        }
     }
 }
