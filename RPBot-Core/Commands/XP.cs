@@ -36,6 +36,9 @@ namespace RPBot
         [Command("update"), Description("Updates saved data")]
         public async Task Update(CommandContext e)
         {
+            await UpdateStats();
+            await UpdatePlayerRanking(e.Guild);
+            await XPClass.UpdateGuildRanking(e.Guild);
             await RPBot.UpdateUserList(e.Guild);
             await e.RespondAsync("Done!");
         }
