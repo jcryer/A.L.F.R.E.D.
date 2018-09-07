@@ -28,7 +28,7 @@ namespace RPBot
 
                 await UpdateStats();
                 await UpdatePlayerRanking(e.Guild);
-                await XPClass.UpdateGuildRanking(e.Guild);
+                await UpdateGuildRanking(e.Guild);
 
                 await e.RespondAsync("Stat changed.");
             }
@@ -38,7 +38,7 @@ namespace RPBot
         {
             await UpdateStats();
             await UpdatePlayerRanking(e.Guild);
-            await XPClass.UpdateGuildRanking(e.Guild);
+            await UpdateGuildRanking(e.Guild);
             await RPBot.UpdateUserList(e.Guild);
             await e.RespondAsync("Done!");
         }
@@ -212,7 +212,7 @@ namespace RPBot
                         xp += guildMember.UserData.Xp;
                     }
                 }
-                xp = (xp / RPClass.Users.Where(x => x.UserData.FactionID == guild.Id).Count());
+                if (xp != 0) xp = (xp / RPClass.Users.Where(x => x.UserData.FactionID == guild.Id).Count());
                 GuildsNew.Add(new GuildObject.StatSheetObject(guild.Name, xp));
             }
 
