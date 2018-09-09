@@ -18,6 +18,7 @@ namespace RPBot
         public static List<InstanceObject.ChannelTemplate> ChannelTemplates = new List<InstanceObject.ChannelTemplate>();
         public static List<TagObject.RootObject> TagsList = new List<TagObject.RootObject>();
         public static List<SignupObject.RootObject> SignupList = new List<SignupObject.RootObject>();
+        public static List<StatusObject.RootObject> StatusList = new List<StatusObject.RootObject>();
         public static Dictionary<ulong, ulong> ApprovalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
         public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); //  Member : Timeout
         public static int slowModeTime = -1;
@@ -49,6 +50,7 @@ namespace RPBot
                 SaveData(2);
                 SaveData(3);
                 SaveData(6);
+                SaveData(7);
                 SaveData(8);
                 SaveData(9);
             }
@@ -73,6 +75,12 @@ namespace RPBot
             {
                 string output = JsonConvert.SerializeObject(ChannelTemplates, Formatting.Indented);
                 File.WriteAllText("Data/ChannelTemplates.txt", output);
+            }
+            else if (saveType == 7)
+            {
+                string output = JsonConvert.SerializeObject(StatusList, Formatting.Indented);
+
+                File.WriteAllText("Data/StatusData.txt", output);
             }
             else if (saveType == 8)
             {
@@ -102,6 +110,11 @@ namespace RPBot
             {
                 List<InstanceObject.ChannelTemplate> input = JsonConvert.DeserializeObject<List<InstanceObject.ChannelTemplate>>(File.ReadAllText("Data/ChannelTemplates.txt"));
                 ChannelTemplates = input;
+            }
+            if (File.Exists("Data/StatusData.txt"))
+            {
+                List<StatusObject.RootObject> input = JsonConvert.DeserializeObject<List<StatusObject.RootObject>>(File.ReadAllText("Data/StatusData.txt"));
+                StatusList = input;
             }
             if (File.Exists("Data/ApprovalsList.txt"))
             {

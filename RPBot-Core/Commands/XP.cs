@@ -39,7 +39,7 @@ namespace RPBot
             await UpdateStats();
             await UpdatePlayerRanking(e.Guild);
             await UpdateGuildRanking(e.Guild);
-            await RPBot.UpdateUserList(e.Guild);
+            await RPBot.UpdateUserList(e.Guild, true);
             await e.RespondAsync("Done!");
         }
 

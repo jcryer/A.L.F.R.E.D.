@@ -1544,5 +1544,53 @@
       "MuteDuration": "00:00:00",
       "Roles": null
     }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 415608366661107713,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "Money": 0,
+      "Xp": 0,
+      "UserID": 327233422592311307,
+      "FactionID": 0
+    },
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
   }
 ]

@@ -89,6 +89,7 @@ namespace RPBot
             CommandsNextService.RegisterCommands(typeof(StatsClass));
             CommandsNextService.RegisterCommands(typeof(SignupClass));
             CommandsNextService.RegisterCommands(typeof(XPClass));
+            CommandsNextService.RegisterCommands(typeof(Status));
 
 
             // WikiClass.InitWiki();
@@ -149,7 +150,6 @@ namespace RPBot
         private async Task Discord_Ready(ReadyEventArgs e)
         {
             await Task.Delay(0);
-
         }
 
         private async Task Discord_VoiceStateUpdated(VoiceStateUpdateEventArgs e)
@@ -313,7 +313,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 RPClass.LogChannel = e.Guild.GetChannel(472054489512149032);
                 RPClass.GeneralChannel = e.Guild.GetChannel(471749965757284354);
                 RPClass.RPGuild = e.Guild;
-                await UpdateUserList(e.Guild);
+                await UpdateUserList(e.Guild, true);
             }
             this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));
 
@@ -322,6 +322,18 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
         private Task Discord_PresenceUpdate(PresenceUpdateEventArgs e)
         {
+            var user = RPClass.StatusList.FirstOrDefault(x => x.UserID == e.User.Id);
+            if (user == null)
+            {
+                RPClass.StatusList.Add(new StatusObject.RootObject(e.User.Id));
+                user = RPClass.StatusList.Last();
+            }
+            if (e.PresenceAfter != null)
+            {
+                user.AddStatus(DateTime.Now, e.PresenceAfter.Status);
+                RPClass.SaveData(7);
+            }
+            
             return Task.Delay(0);
         }
 
@@ -494,12 +506,13 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
         private async Task CommandsNextService_CommandExecuted(CommandExecutionEventArgs e)
         {
             Discord.DebugLogger.LogMessage(LogLevel.Info, "CommandsNext", $"{e.Context.User.Username} executed {e.Command.Name} in {e.Context.Channel.Name}", DateTime.UtcNow);
+            await Task.Delay(0);
         }
 
-        public static async Task UpdateUserList(DiscordGuild e)
+        public static async Task UpdateUserList(DiscordGuild e, bool update)
         {
-            var discordMembers = await e.GetAllMembersAsync();
-            foreach (var user in discordMembers)
+            var members = await e.GetAllMembersAsync();
+            foreach (var user in members)
             {
                 if (!RPClass.Users.Any(x => x.UserData.UserID == user.Id))
                 {
@@ -507,21 +520,13 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 }
             }
 
-            await XPClass.UpdateStats();
-            await XPClass.UpdatePlayerRanking(e);
-            await XPClass.UpdateGuildRanking(e);
-            /*
-            foreach (var user in RPClass.Users)
+            if (update)
             {
-                if (user.UserData.Xp > 0)
-                {
-                    var member = discordMembers.First(x => x.Id == user.UserData.UserID);
-                    if (member.Roles.Any(x => RPClass.RoleIDs.Contains(x.Id)) && )
-                    {
-
-                    }
-                }
-            }*/
+                await XPClass.UpdateStats();
+                await XPClass.UpdatePlayerRanking(e);
+                await XPClass.UpdateGuildRanking(e);
+            }
+           
         }
     }
 }
