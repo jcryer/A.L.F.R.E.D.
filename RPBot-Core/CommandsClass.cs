@@ -398,7 +398,7 @@ namespace RPBot
             }
         }
 
-        [Command("eval"), Aliases("evalcs", "cseval", "csharp", "roslyn", "debug"), Description("Evaluates C# code."), RequireRoles(RoleCheckMode.All, "Staff")]
+        [Command("eval"), Aliases("evalcs", "cseval", "csharp", "roslyn", "debug"), Description("Evaluates C# code."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task EvalCS(CommandContext ctx, params string[] code_input)
         {
             var msg = ctx.Message;
