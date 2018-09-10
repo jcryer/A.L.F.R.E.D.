@@ -18,6 +18,8 @@ using Newtonsoft.Json.Linq;
 using System.Net.Http;
 using Microsoft.CodeAnalysis;
 using PasteSharp.Config;
+using Microsoft.CodeAnalysis.Scripting;
+using Microsoft.CodeAnalysis.CSharp.Scripting;
 
 namespace RPBot
 {
@@ -396,6 +398,50 @@ namespace RPBot
             }
         }
 
+        [Command("eval"), Aliases("evalcs", "cseval", "csharp", "roslyn", "debug"), Description("Evaluates C# code."), RequireRoles(RoleCheckMode.All, "Staff")]
+        public async Task EvalCS(CommandContext ctx, params string[] code_input)
+        {
+            var msg = ctx.Message;
+            var code = string.Join(" ", code_input);
+
+            var cs1 = code.IndexOf("```") + 3;
+            cs1 = code.IndexOf('\n', cs1) + 1;
+            var cs2 = code.LastIndexOf("```");
+
+            if (cs1 == -1 || cs2 == -1)
+                throw new ArgumentException("You need to wrap the code into a code block.");
+
+            var cs = code.Substring(cs1, cs2 - cs1);
+
+            msg = await ctx.RespondAsync("", embed: new DiscordEmbedBuilder()
+            {
+                Color = 0xFF007F,
+                Description = "Evaluating..."
+            });
+
+            try
+            {
+                var globals = new EvalGlobals(ctx);
+
+                var sopts = ScriptOptions.Default;
+                sopts = sopts.WithImports("System", "System.Collections.Generic", "System.Linq", "System.Text", "System.Threading.Tasks", "DSharpPlus", "DSharpPlus.CommandsNext", "DSharpPlus.Interactivity", "RPBot");
+                sopts = sopts.WithReferences(AppDomain.CurrentDomain.GetAssemblies().Where(xa => !xa.IsDynamic && !string.IsNullOrWhiteSpace(xa.Location)));
+
+                var script = CSharpScript.Create(cs, sopts, typeof(EvalGlobals));
+                script.Compile();
+                var result = await script.RunAsync(globals);
+                if (result != null && result.ReturnValue != null && !string.IsNullOrWhiteSpace(result.ReturnValue.ToString()))
+                    await msg.ModifyAsync(embed: new DSharpPlus.Entities.Optional<DiscordEmbed>(new DiscordEmbedBuilder() { Title = "Evaluation Result", Description = result.ReturnValue.ToString(), Color = 0x007FFF }));
+                else
+                    await msg.ModifyAsync(embed: new DSharpPlus.Entities.Optional<DiscordEmbed>(new DiscordEmbedBuilder() { Title = "Evaluation Successful", Description = "No result was returned.", Color = 0x007FFF }));
+            }
+            catch (Exception ex)
+            {
+                await msg.ModifyAsync(embed: new DSharpPlus.Entities.Optional<DiscordEmbed>(new DiscordEmbedBuilder() { Title = "Evaluation Failure", Description = string.Concat("**", ex.GetType().ToString(), "**: ", ex.Message), Color = 0xFF0000 }));
+            }
+        }
+        
+
         [Command("listroles"), Description("Lists all roles & IDs."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task ListRoles(CommandContext e)
         { 
@@ -630,5 +676,14 @@ namespace RPBot
             await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b.Build());
         }
         
+    }
+    public class EvalGlobals
+    {
+        public CommandContext ctx;
+
+        public EvalGlobals(CommandContext ctx)
+        {
+            this.ctx = ctx;
+        }
     }
 }

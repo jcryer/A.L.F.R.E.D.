@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace RPBot
 {
-    class StatusObject
+    public class StatusObject
     {
         public class RootObject
         {

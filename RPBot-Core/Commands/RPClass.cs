@@ -11,7 +11,7 @@ using PasteSharp;
 
 namespace RPBot
 {
-    static class RPClass
+    public static class RPClass
     {
         public static List<UserObject.RootObject> Users = new List<UserObject.RootObject>();
         public static List<GuildObject.RootObject> Guilds = new List<GuildObject.RootObject>();

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace RPBot
 {
-    class UserObject
+    public class UserObject
     {
         public class RootObject
         {

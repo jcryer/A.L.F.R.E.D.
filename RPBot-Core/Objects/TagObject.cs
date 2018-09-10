@@ -2,7 +2,7 @@
 
 namespace RPBot
 {
-    class TagObject {
+    public class TagObject {
         public class RootObject
         {
             public string Name { get; set; }

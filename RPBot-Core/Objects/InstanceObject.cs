@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    class InstanceObject
+    public class InstanceObject
     {
         public class ChannelTemplate
         {

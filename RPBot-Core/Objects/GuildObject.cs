@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    class GuildObject
+    public class GuildObject
     {
         public class RootObject
         {
