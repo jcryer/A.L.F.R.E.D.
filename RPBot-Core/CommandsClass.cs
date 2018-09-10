@@ -396,6 +396,12 @@ namespace RPBot
             }
         }
 
+        [Command("listroles"), Description("Lists all roles & IDs."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        public async Task ListRoles(CommandContext e)
+        { 
+            await e.RespondAsync(string.Join("\n", e.Guild.Roles.Select(x => $"{x.Name} {x.Id} {x.Color.ToString()}")));
+        }
+
         [Command("space"),  Description("Spaces text out"), IsMuted]
         public async Task Space(CommandContext e, [Description("How many spaces between each char")] int space, [RemainingText, Description("What to say?")] string text)
         {

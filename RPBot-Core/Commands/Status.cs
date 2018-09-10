@@ -198,7 +198,10 @@ namespace RPBot
                         {
                             try
                             {
-                                response += $"{members.First(x => x.Id == person_one.UserID).DisplayName} & {members.First(x => x.Id == person_two.UserID).DisplayName} - {hits} hits - {(int)((hits / statuses_one.Count) * 100)}%\n";
+                                float endHits = 0;
+                                if (hits_same > hits_different) endHits = hits_same;
+                                else endHits = hits_different;
+                                response += $"{members.First(x => x.Id == person_one.UserID).DisplayName} & {members.First(x => x.Id == person_two.UserID).DisplayName} - {endHits} hits - {(int)((endHits / statuses_one.Count) * 100)}%\n";
                             }
                             catch
                             {
