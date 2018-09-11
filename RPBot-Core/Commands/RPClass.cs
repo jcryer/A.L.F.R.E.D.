@@ -153,7 +153,14 @@ namespace RPBot
                 }
                 else if (DateTime.UtcNow.Minute == 0 && DateTime.UtcNow.Hour == 12 && y.AddHours(2) < DateTime.UtcNow)
                 {
-                    TimePhase = "It is now midday, on " + DateTime.UtcNow.DayOfWeek;
+                    if (DateTime.UtcNow.DayOfWeek == DayOfWeek.Wednesday)
+                    {
+                        TimePhase = "It is Wednesday my dudes";
+                    }
+                    else
+                    {
+                        TimePhase = "It is now midday, on " + DateTime.UtcNow.DayOfWeek;
+                    }
                     y = DateTime.UtcNow;
                     await AnnouncementChannel.SendMessageAsync(TimePhase);
 
